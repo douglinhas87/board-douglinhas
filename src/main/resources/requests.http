@@ -1,0 +1,26 @@
+### Criar um novo Board
+POST http://localhost:8080/api/boards
+Content-Type: application/json
+
+{
+  "title": "Meu Primeiro Board",
+  "description": "Descrição do board de teste"
+}
+
+### Listar todos os Boards
+GET http://localhost:8080/api/boards
+
+### Buscar um Board pelo ID (substituir {id} pelo ID correto)
+GET http://localhost:8080/api/boards/1
+
+### Atualizar um Board (substituir {id} pelo ID correto)
+PUT http://localhost:8080/api/boards/1
+Content-Type: application/json
+
+{
+  "title": "Título atualizado",
+  "description": "Nova descrição"
+}
+
+### Deletar um Board (substituir {id} pelo ID correto)
+DELETE http://localhost:8080/api/boards/1
